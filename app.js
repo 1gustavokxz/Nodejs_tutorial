@@ -1,6 +1,6 @@
 const express = require("express");
 const session = require("express-session");
-const sqlite3 = require("sqloite3");
+const sqlite3 = require("sqlite3");
 
 const app = express();
 
@@ -19,13 +19,22 @@ app.get("/", (req, res) => {
 app.get("/sobre", (req, res) => {
     console.log("GET /sobre")
     // res.send("Você está na pagina SOBRE.")
-    res.render("sobre");
+    res.render("pages/sobre");
 });
 app.get("/dashboard", (req, res) => {
     console.log("GET /dashboard")
-    res.send("Você está na pagina DASHBOARD.")
+    res.render("pages/dashboard")
 });
-
+app.get("/login", (req, res) => {
+    console.log("GET /login")
+    // res.send("Você está na pagina SOBRE.")
+    res.render("pages/login");
+});
+app.get("/cadastro", (req, res) => {
+    console.log("GET /cadastro")
+    // res.send("Você está na pagina SOBRE.")
+    res.render("pages/cadastro");
+});
 
 app.listen(PORT, () => {
     console.log(`Servidor sendo executado na porta ${PORT}`);
