@@ -4,6 +4,10 @@ const sqlite3 = require("sqlite3");
 
 const app = express();
 
+
+
+
+
 const PORT = 8000;
 
 app.use('/static', express.static(__dirname + '/static'))
