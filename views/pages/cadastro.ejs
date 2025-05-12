@@ -4,6 +4,13 @@
 <%- include("../partials/head")%>
 
 <body>
+    <form action="/cadastro" method="post" class="formItens">
+        <label for="username">Seu nome:</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="senha">
+        <button type="submit">Entrar</button>
+    </form>
     <%- include("../partials/menu")%>
     Você está na pagina de CADASTRO
     <a href="/"> voltar para a pagina inicial</a>

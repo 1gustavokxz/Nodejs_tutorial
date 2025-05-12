@@ -2,3 +2,23 @@ header{
     background-color: rgb(0, 0, 0);
     padding: 3px;
 }
+*{
+    
+}
+body{
+    margin: 0% auto;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(78, 78, 78);
+    border: 1px solid green;
+}
+form{
+    padding: 30px;
+    color: rgb(239, 220, 14);
+}
